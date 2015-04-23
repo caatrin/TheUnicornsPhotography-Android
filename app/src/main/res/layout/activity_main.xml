@@ -1,4 +1,29 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/container"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    tools:context=".MainActivity" tools:ignore="MergeRootFrame" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ipAddressText"
+        android:layout_margin="8dp"
+        android:hint="Enter IP address" />
+
+
+        <Button android:id="@+id/viewPostsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Posts"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp" />
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postListView"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
